@@ -36,7 +36,7 @@ local triggers = {
 }
 
 local action = function(msg)
-
+sendChatAction(msg.chat.id, 'typing')
 	local nick = database.users[msg.from.id_str].nickname or msg.from.first_name
 
 	for k,v in pairs(config.greetings) do
