@@ -4,7 +4,7 @@ local triggers = {
 }
 
 local action = function(msg)
-
+sendChatAction(msg.chat.id, 'typing')
 	if msg.from.id ~= config.admin then
 		return
 	end
