@@ -42,7 +42,8 @@ return {
 		'shout',
 		-- Put new plugins above this line.
 		'help',
-		'greetings'
+		'greetings',
+		'markdown'
 	}
 
 }
