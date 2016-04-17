@@ -11,7 +11,7 @@ local triggers = {
 }
 
 local action = function(msg)
-
+sendChatAction(msg.chat.id, 'upload_photo')
 	local url = 'http://thecatapi.com/api/images/get?format=html&type=jpg'
 	if config.thecatapi_key then
 		url = url .. '&api_key=' .. config.thecatapi_key
