@@ -6,8 +6,7 @@ if not database.blacklist then
 end
 
 local triggers = {
-	''
-}
+	'^[!/#]blacklist[@'..bot.username..']*'}
 
  local action = function(msg)
 
