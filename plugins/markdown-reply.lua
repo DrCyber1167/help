@@ -8,6 +8,7 @@ local triggers = {
 }
 
 local action = function(msg)
+ sendChatAction(msg.chat.id, 'typing')
   if msg.text:match("^[!/#]bold") and msg.reply_to_message then
   sendMessage(msg.chat.id, '*'..msg.reply_to_message.text..'*',true,nil,true)
   end
