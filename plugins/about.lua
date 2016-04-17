@@ -10,9 +10,7 @@ local triggers = {
 }
 
 local action = function(msg)
-
-	-- Filthy hack, but here is where we'll stop forwarded messages from hitting
-	-- other plugins.
+sendChatAction(msg.chat.id, 'typing')
 	if msg.forward_from then
 		if msg.chat.type == 'private' or msg.from.id == config.admin then
 		local fwdinfo = '#ID => '..msg.forward_from.id
