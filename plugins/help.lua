@@ -19,7 +19,7 @@ local triggers = {
 }
 
 local action = function(msg)
-
+sendChatAction(msg.chat.id, 'typing')
 	local input = msg.text_lower:input()
 
 	-- Attempts to send the help message via PM.
