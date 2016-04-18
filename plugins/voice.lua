@@ -1,3 +1,7 @@
+local command = 'voice' 
+local doc = [[```
+/tts [text]
+```]]
 local triggers = {
   "^[!/#]tts",
 }
@@ -49,6 +53,8 @@ return texttovoice(msg)
 end
 end
 return {
-  action = action,
-  triggers = triggers
+	action = action,
+	triggers = triggers,
+	doc = doc,
+	command = command
 }
