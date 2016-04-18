@@ -44,7 +44,7 @@ local texttovoice = function(msg)
 end
 
 local action = function(msg)
-if msg.text:match("^[!/#]voice (.*)") then
+if msg.text:match("^[!/#]tts (.*)") then
 return texttovoice(msg)
 end
 end
