@@ -25,8 +25,18 @@ sendRequest = function(url)
 	return tab
 
 end
-babaii = 140529465
-yaru = 97608740
+--function admins
+function is_admin(msg)-- Check if user is admin or not
+  local var = false
+  local admins = config.admins
+  for k,v in pairs(admins) do
+    if msg.from.id == v then
+      var = true
+    end
+  end
+  return var
+end
+
 getMe = function()
 
 	local url = BASE_URL .. '/getMe'
