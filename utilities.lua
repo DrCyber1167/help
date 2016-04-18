@@ -127,11 +127,11 @@ get_coords = function(input)
 	}
 
 end
--- inline 
-function inline_block(title, text) -- Inline block article
-	local ran = math.random(1 ,100)
-	local inline = '{"type":"article", "id":"'.. ran ..'", "title":"'.. title ..'", "message_text": "'.. text ..'", "parse_mode":"Markdown"}'
-	return inline
+--inline
+function inline_block(title, text, description, thumburl)
+  local ran = math.random(1 ,100)
+  local inline = '{"type":"article", "id":"'.. ran ..'", "title":"'.. title ..'", "message_text": "'.. text ..'", "parse_mode":"Markdown", "description":"'.. description ..'", "thumb_url":"'.. thumburl ..'"}'
+  return inline
 end
  -- Get the number of values in a key/value table.
 table_size = function(tab)
