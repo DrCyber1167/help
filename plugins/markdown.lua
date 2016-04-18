@@ -34,5 +34,7 @@ end
 
 return {
   action = action,
-  triggers = triggers
+  triggers = triggers,
+  doc = doc,
+	command = command
 }
