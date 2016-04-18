@@ -1,5 +1,9 @@
-local command = 'Markdown by reply'
-local doc = 'Markdown by reply'
+local command = 'markdown'
+local doc = [[```
+/bold text |and reply
+/italic text |and reply
+/code test |and reply
+```]]
 local triggers = {
   '^[!/#]bold[@'..bot.username..']*',
   '^[!/#]italic[@'..bot.username..']*',
