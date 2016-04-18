@@ -1,5 +1,5 @@
 local triggers = {
-  "^[!/#]voice",
+  "^[!/#]tts",
 }
 
 download_file = function(url, filename)
@@ -37,7 +37,7 @@ download_file = function(url, filename)
 end
 local texttovoice = function(msg)
     sendChatAction(msg.chat.id, 'record_audio ')
-  local matches = { string.match(msg.text, "^[!/#]voice (.*)") }
+  local matches = { string.match(msg.text, "^[!/#]tts (.*)") }
   local urlvc = "http://tts.baidu.com/text2audio?lan=en&ie=UTF-8&text="..matches[1]
   local file = download_file(urlvc,'vc.mp3')
   sendVoice(msg.chat.id,'vc.mp3')
