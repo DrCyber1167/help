@@ -6,7 +6,7 @@ local doc = [[```
 --------------------
 /boldch @UsernameChannel text
 /italicch @UsernameChannel text
-/code @UsernameChannel text
+/codech @UsernameChannel text
 /linkch @UsernameChannel text url
 --------------------
 inline type @NicRobot text
