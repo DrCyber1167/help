@@ -11,7 +11,7 @@ for i,v in ipairs(config.plugins)
 help_text = help_text .. [[
 
 Send` /help [plugin name]` for more info.
-[RoyalTeam](telegram.me/RoyalTeamCh)
+🔥Fire Bot🔥 Helper
 ]]
 
 local triggers = {
