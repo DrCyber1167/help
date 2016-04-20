@@ -22,7 +22,7 @@ sendChatAction(msg.chat.id, 'typing')
 		return
 			end
 	end
-	local message = 'I am '..bot.first_name..', the plugin-wielding, multipurpose Telegram bot.\n\nMy owner🍼 => [RoYalTeam](http://telegram.me/royalteamch)\nMy base🙇 => [topkecleon/otouto](https://github.com/topkecleon/otouto)\n\nSend => /help to get started.'
+	local message = 'I am '..bot.first_name..', the plugin-wielding, multipurpose Telegram bot.\n\n🔥Fire Bot🔥 Helper\n\n\n developed by @parsaalemi\n\nSend => /help to get started.'
 
 	if msg.new_chat_participant and msg.new_chat_participant.id == bot.id then
 		sendMessage(msg.chat.id, message, true,nil,true)
